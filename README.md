@@ -6,7 +6,13 @@
 
 ---
 
-Sortify is an **LLM-driven autonomous agent** that continuously optimizes ranking parameters in recommendation systems. It replaces the traditional manual tune-deploy-evaluate loop with a fully automated closed-loop that runs every 4 hours — learning from its own online results and self-correcting without human intervention.
+Sortify is the **first LLM-driven autonomous agent that takes full control of ranking optimization in a live production recommender system** — observing real-time metrics, reasoning about multi-objective trade-offs, making parameter decisions, and self-correcting from its own online outcomes, all without human intervention.
+
+But what makes Sortify truly singular is its **meta-recursive nature**: the entire system — ~100K lines of production code, 78 modules, 7-table memory database, dual-channel calibration engine, and this very document — was built *from scratch by AI coding agents* orchestrated by a single human. **Zero lines of production code were written by a human hand; zero sentences in the technical report were drafted by a human.** The human served solely as *architect and orchestrator*: defining objectives, decomposing problems, reviewing outputs, and steering agents toward coherent execution.
+
+This creates a recursive closed loop: **AI agents built an AI agent that autonomously operates a live production system.** The pattern at the development level mirrors the pattern inside Sortify itself — a higher intelligence (human) does not perform low-level optimization (writing code), but adjusts *framework-level parameters* (task specifications, design constraints) to guide agent execution. The same **"steer, don't row"** principle that powers Sortify's autonomous optimization is what made single-person development possible.
+
+The implication is a **paradigm reconstruction, not an efficiency gain**. What used to separate "having a good idea" from "a system running in production" was a vast implementation chasm — months of infrastructure, data plumbing, and debugging. That cost has collapsed to near zero. The ceiling is no longer team size or API fluency, but the depth of one person's *understanding of the problem*, their *architectural taste*, and their *art of orchestrating agents*.
 
 <p align="center">
   <img src="figures/abs-overview.png" alt="Sortify overview" width="100%"/>

@@ -9,12 +9,12 @@
 <table width="100%">
 <tr>
 <td align="center" colspan="2">
-<h3><nobr><a href="docs/Sortify-Technical-Report-en.pdf">Technical Report (EN)</a></nobr></h3>
-<nobr><sub>Full architecture, evaluation, and discussion</sub></nobr>
+<h3><a href="docs/Sortify-Technical-Report-en.pdf">Technical&nbsp;Report&nbsp;(EN)</a></h3>
+<sub>Full&nbsp;architecture,&nbsp;evaluation,&nbsp;and&nbsp;discussion</sub>
 </td>
 <td align="center" colspan="2">
-<h3><nobr><a href="docs/Sortify-Technical-Report-zh.pdf">技术报告 (中文)</a></nobr></h3>
-<nobr><sub>完整系统架构、评测与讨论</sub></nobr>
+<h3><a href="docs/Sortify-Technical-Report-zh.pdf">技术报告&nbsp;(中文)</a></h3>
+<sub>完整系统架构、评测与讨论</sub>
 </td>
 </tr>
 <tr>
@@ -47,6 +47,17 @@ The implication is a **paradigm reconstruction, not an efficiency gain**. What u
 
 <br>
 
+## Blog
+
+> Articles exploring the ideas, design decisions, and engineering behind Sortify.
+
+| Date | Title | Topic |
+|------|-------|-------|
+| 2026-03-28 | [用 LLM 做推荐排序的自动校准：一个基于决策理论的工程实践](blog/2026-03-28-zhihu-post-v2.md) | Decision-theoretic calibration in production ranking systems |
+| 2026-03-27 | [我用 AI 接管了推荐系统：用群论和 Agent，重新定义推荐算法的边界](blog/2026-03-27-zhihu-post.md) | Group-theoretic perspective on agent-driven ranking |
+
+<br>
+
 ## Key Results
 
 | Market | Metric | Result |
@@ -59,17 +70,6 @@ The implication is a **paradigm reconstruction, not an efficiency gain**. What u
 - Fully autonomous: **~6 rounds/day**, zero human intervention after launch
 - LLM cost per iteration: **~$0.03 – $0.10 USD**
 - LLM corrections converge from **5 &rarr; 2 items**, demonstrating learned stability
-
-<br>
-
-## Blog
-
-> Articles exploring the ideas, design decisions, and engineering behind Sortify.
-
-| Date | Title | Topic |
-|------|-------|-------|
-| 2026-03-28 | [用 LLM 做推荐排序的自动校准：一个基于决策理论的工程实践](blog/2026-03-28-zhihu-post-v2.md) | Decision-theoretic calibration in production ranking systems |
-| 2026-03-27 | [我用 AI 接管了推荐系统：用群论和 Agent，重新定义推荐算法的边界](blog/2026-03-27-zhihu-post.md) | Group-theoretic perspective on agent-driven ranking |
 
 <br>
 

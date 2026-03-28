@@ -4,11 +4,26 @@
 
 **放手时刻：智能体自主驱动的影响力置换排序优化**
 
-[![Technical Report](https://img.shields.io/badge/Technical_Report-EN-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-en.pdf)
-[![技术报告](https://img.shields.io/badge/技术报告-中文-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-zh.pdf)
+<br>
 
-[![演示](https://img.shields.io/badge/演示-视频-34A853?style=flat-square)](docs/sortify-demo.mp4)
-[![English](https://img.shields.io/badge/Docs-English-EA4335?style=flat-square)](README.md)
+<table width="100%">
+<tr>
+<td align="center" colspan="2">
+<h3><a href="docs/Sortify-Technical-Report-en.pdf">📄 Technical Report (EN)</a></h3>
+<sub>Full architecture, evaluation, and discussion</sub>
+</td>
+<td align="center" colspan="2">
+<h3><a href="docs/Sortify-Technical-Report-zh.pdf">📄 技术报告 (中文)</a></h3>
+<sub>完整系统架构、评测与讨论</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="docs/design/zh/"><strong>设计文档</strong></a></td>
+<td align="center" width="25%"><a href="blog/2026-03-28-zhihu-post-v2.md"><strong>博客</strong></a></td>
+<td align="center" width="25%"><a href="docs/sortify-demo.mp4"><strong>演示视频</strong></a></td>
+<td align="center" width="25%"><a href="README.md"><strong>English</strong></a></td>
+</tr>
+</table>
 
 </div>
 
@@ -257,12 +272,28 @@ Sortify 的架构并非工程启发式的拼凑——而是 **Savage SEU 公理*
 
 ## 资源导航
 
-| 资源 | 说明 |
-|------|------|
-| [Technical Report (English)](docs/Sortify-Technical-Report-en.pdf) | 完整英文技术报告 |
-| [技术报告 (中文)](docs/Sortify-Technical-Report-zh.pdf) | 完整中文技术报告，含系统架构、评测与讨论 |
-| [设计文档 (中文)](docs/design/zh/) | 8 篇深度解析，覆盖每个架构决策 |
-| [演示视频](docs/sortify-demo.mp4) | 系统端到端运行演示 |
+<table>
+<tr>
+<td align="center" width="50%">
+<h3><a href="docs/Sortify-Technical-Report-en.pdf">📄 Technical Report (EN)</a></h3>
+<sub>Full architecture, evaluation, and discussion</sub>
+</td>
+<td align="center" width="50%">
+<h3><a href="docs/Sortify-Technical-Report-zh.pdf">📄 技术报告 (中文)</a></h3>
+<sub>完整系统架构、评测与讨论</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<a href="docs/design/zh/"><strong>设计文档 (中文)</strong></a><br>
+<sub>8 篇深度解析，覆盖每个架构决策</sub>
+</td>
+<td align="center">
+<a href="docs/sortify-demo.mp4"><strong>演示视频</strong></a><br>
+<sub>系统端到端运行演示</sub>
+</td>
+</tr>
+</table>
 
 <br>
 

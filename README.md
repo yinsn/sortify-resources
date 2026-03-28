@@ -4,11 +4,26 @@
 
 **Let the Agent Steer: Closed-Loop Ranking Optimization via Influence Exchange**
 
-[![Technical Report](https://img.shields.io/badge/Technical_Report-EN-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-en.pdf)
-[![技术报告](https://img.shields.io/badge/技术报告-中文-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-zh.pdf)
+<br>
 
-[![Demo](https://img.shields.io/badge/Demo-Video-34A853?style=flat-square)](docs/sortify-demo.mp4)
-[![中文版](https://img.shields.io/badge/文档-中文版-EA4335?style=flat-square)](README-zh.md)
+<table width="100%">
+<tr>
+<td align="center" colspan="2">
+<h3><a href="docs/Sortify-Technical-Report-en.pdf">📄 Technical Report (EN)</a></h3>
+<sub>Full architecture, evaluation, and discussion</sub>
+</td>
+<td align="center" colspan="2">
+<h3><a href="docs/Sortify-Technical-Report-zh.pdf">📄 技术报告 (中文)</a></h3>
+<sub>完整系统架构、评测与讨论</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="docs/design/en/"><strong>Design Docs</strong></a></td>
+<td align="center" width="25%"><a href="blog/2026-03-28-zhihu-post-v2.md"><strong>Blog</strong></a></td>
+<td align="center" width="25%"><a href="docs/sortify-demo.mp4"><strong>Demo Video</strong></a></td>
+<td align="center" width="25%"><a href="README-zh.md"><strong>中文版</strong></a></td>
+</tr>
+</table>
 
 </div>
 
@@ -257,12 +272,28 @@ Start with #1 and #2 for foundations, then #3 and #4 for the core loop.
 
 ## Resources
 
-| Resource | Description |
-|----------|-------------|
-| [Technical Report (English)](docs/Sortify-Technical-Report-en.pdf) | Full technical report with architecture, evaluation, and discussion |
-| [Technical Report (Chinese)](docs/Sortify-Technical-Report-zh.pdf) | Full technical report in Chinese |
-| [Design Documentation (EN)](docs/design/en/) | 8-part deep dive into every architectural decision |
-| [Demo Video](docs/sortify-demo.mp4) | End-to-end demonstration of the system in action |
+<table>
+<tr>
+<td align="center" width="50%">
+<h3><a href="docs/Sortify-Technical-Report-en.pdf">📄 Technical Report (EN)</a></h3>
+<sub>Full architecture, evaluation, and discussion</sub>
+</td>
+<td align="center" width="50%">
+<h3><a href="docs/Sortify-Technical-Report-zh.pdf">📄 技术报告 (中文)</a></h3>
+<sub>完整系统架构、评测与讨论</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<a href="docs/design/en/"><strong>Design Documentation (EN)</strong></a><br>
+<sub>8-part deep dive into every architectural decision</sub>
+</td>
+<td align="center">
+<a href="docs/sortify-demo.mp4"><strong>Demo Video</strong></a><br>
+<sub>End-to-end demonstration of the system in action</sub>
+</td>
+</tr>
+</table>
 
 <br>
 

@@ -9,12 +9,12 @@
 <table width="100%">
 <tr>
 <td align="center" colspan="2">
-<h3><a href="docs/Sortify-Technical-Report-en.pdf">📄 Technical Report (EN)</a></h3>
-<sub>Full architecture, evaluation, and discussion</sub>
+<h3><nobr><a href="docs/Sortify-Technical-Report-en.pdf">Technical Report (EN)</a></nobr></h3>
+<nobr><sub>Full architecture, evaluation, and discussion</sub></nobr>
 </td>
 <td align="center" colspan="2">
-<h3><a href="docs/Sortify-Technical-Report-zh.pdf">📄 技术报告 (中文)</a></h3>
-<sub>完整系统架构、评测与讨论</sub>
+<h3><nobr><a href="docs/Sortify-Technical-Report-zh.pdf">技术报告 (中文)</a></nobr></h3>
+<nobr><sub>完整系统架构、评测与讨论</sub></nobr>
 </td>
 </tr>
 <tr>
@@ -275,11 +275,11 @@ Sortify 的架构并非工程启发式的拼凑——而是 **Savage SEU 公理*
 <table>
 <tr>
 <td align="center" width="50%">
-<h3><a href="docs/Sortify-Technical-Report-en.pdf">📄 Technical Report (EN)</a></h3>
+<h3><a href="docs/Sortify-Technical-Report-en.pdf">Technical Report (EN)</a></h3>
 <sub>Full architecture, evaluation, and discussion</sub>
 </td>
 <td align="center" width="50%">
-<h3><a href="docs/Sortify-Technical-Report-zh.pdf">📄 技术报告 (中文)</a></h3>
+<h3><a href="docs/Sortify-Technical-Report-zh.pdf">技术报告 (中文)</a></h3>
 <sub>完整系统架构、评测与讨论</sub>
 </td>
 </tr>

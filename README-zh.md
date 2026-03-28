@@ -4,8 +4,9 @@
 
 **放手时刻：智能体自主驱动的影响力置换排序优化**
 
-[![Technical Report](https://img.shields.io/badge/Technical_Report-EN-4285F4?style=flat-square)](docs/Sortify-Technical-Report-en.pdf)
-[![技术报告](https://img.shields.io/badge/技术报告-中文-4285F4?style=flat-square)](docs/Sortify-Technical-Report-zh.pdf)
+[![Technical Report](https://img.shields.io/badge/Technical_Report-EN-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-en.pdf)
+[![技术报告](https://img.shields.io/badge/技术报告-中文-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-zh.pdf)
+
 [![演示](https://img.shields.io/badge/演示-视频-34A853?style=flat-square)](docs/sortify-demo.mp4)
 [![English](https://img.shields.io/badge/Docs-English-EA4335?style=flat-square)](README.md)
 

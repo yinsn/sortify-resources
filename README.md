@@ -4,8 +4,9 @@
 
 **Let the Agent Steer: Closed-Loop Ranking Optimization via Influence Exchange**
 
-[![Technical Report](https://img.shields.io/badge/Technical_Report-EN-4285F4?style=flat-square)](docs/Sortify-Technical-Report-en.pdf)
-[![技术报告](https://img.shields.io/badge/技术报告-中文-4285F4?style=flat-square)](docs/Sortify-Technical-Report-zh.pdf)
+[![Technical Report](https://img.shields.io/badge/Technical_Report-EN-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-en.pdf)
+[![技术报告](https://img.shields.io/badge/技术报告-中文-4285F4?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/Sortify-Technical-Report-zh.pdf)
+
 [![Demo](https://img.shields.io/badge/Demo-Video-34A853?style=flat-square)](docs/sortify-demo.mp4)
 [![中文版](https://img.shields.io/badge/文档-中文版-EA4335?style=flat-square)](README-zh.md)
 

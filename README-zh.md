@@ -9,12 +9,10 @@
 <table width="100%">
 <tr>
 <td align="center" colspan="2">
-<h3><a href="docs/Sortify-Technical-Report-en.pdf">Technical&nbsp;Report&nbsp;(EN)</a></h3>
-<sub>Full&nbsp;architecture,&nbsp;evaluation,&nbsp;and&nbsp;discussion</sub>
+<h3><a href="docs/Sortify-Technical-Report-en.pdf">Technical Report (EN)</a></h3>
 </td>
 <td align="center" colspan="2">
-<h3><a href="docs/Sortify-Technical-Report-zh.pdf">技术报告&nbsp;(中文)</a></h3>
-<sub>完整系统架构、评测与讨论</sub>
+<h3><a href="docs/Sortify-Technical-Report-zh.pdf">技术报告 (中文)</a></h3>
 </td>
 </tr>
 <tr>

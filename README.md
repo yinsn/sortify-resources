@@ -51,6 +51,7 @@ The implication is a **paradigm reconstruction, not an efficiency gain**. What u
 
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-03-28 | [Harness Engineering 的底层逻辑：把世界观与价值观编码进系统](blog/2026-03-28-sortify-as-harness-engineering-template.md) | Bayesian philosophy meets harness engineering in Sortify |
 | 2026-03-28 | [用 LLM 做推荐排序的自动校准：一个基于决策理论的工程实践](blog/2026-03-28-zhihu-post-v2.md) | Decision-theoretic calibration in production ranking systems |
 | 2026-03-27 | [我用 AI 接管了推荐系统：用群论和 Agent，重新定义推荐算法的边界](blog/2026-03-27-zhihu-post.md) | Group-theoretic perspective on agent-driven ranking |
 

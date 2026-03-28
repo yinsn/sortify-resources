@@ -28,7 +28,7 @@
 ---
 
 > [!IMPORTANT]
-> **100% Agent-Generated.** The Sortify system itself — ~100K lines of production code — and every artifact in this repository (technical reports, design documents, blog posts, figures, and demo video) were generated entirely by AI agents orchestrated by **yin.cheng**. Zero lines of code, zero sentences of prose, and zero pixels of diagrams were produced by human hand.
+> **100% Agent-Generated.** The Sortify system itself — ~100K lines of production code — and every artifact in this repository (technical reports, design documents, blog posts, figures, and demo video) were generated entirely by AI agents orchestrated by **[yin.cheng](https://www.zhihu.com/people/cheng-yin-36)**. Zero lines of code, zero sentences of prose, and zero pixels of diagrams were produced by human hand.
 
 Sortify is the **first LLM-driven autonomous agent that takes full control of ranking optimization in a live production recommender system** — observing real-time metrics, reasoning about multi-objective trade-offs, making parameter decisions, and self-correcting from its own online outcomes, all without human intervention.
 

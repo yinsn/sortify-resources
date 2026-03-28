@@ -1,8 +1,15 @@
+<div align="center">
+
 # Sortify
 
-### Let the Agent Steer: Closed-Loop Ranking Optimization via Influence Exchange
+**Let the Agent Steer: Closed-Loop Ranking Optimization via Influence Exchange**
 
-**[中文版](README-zh.md)** ｜ **[Technical Report (EN)](docs/Sortify-Technical-Report-en.pdf)** ｜ **[技术报告 (中文)](docs/Sortify-Technical-Report-zh.pdf)** ｜ **[Blog Post (知乎)](blog/zhihu_post.md)** ｜ **[Demo Video](docs/sortify-demo.mp4)**
+[![Technical Report](https://img.shields.io/badge/Technical_Report-EN-4285F4?style=flat-square)](docs/Sortify-Technical-Report-en.pdf)
+[![技术报告](https://img.shields.io/badge/技术报告-中文-4285F4?style=flat-square)](docs/Sortify-Technical-Report-zh.pdf)
+[![Demo](https://img.shields.io/badge/Demo-Video-34A853?style=flat-square)](docs/sortify-demo.mp4)
+[![中文版](https://img.shields.io/badge/文档-中文版-EA4335?style=flat-square)](README-zh.md)
+
+</div>
 
 ---
 
@@ -22,6 +29,8 @@ The implication is a **paradigm reconstruction, not an efficiency gain**. What u
   <em>(a) Three-layer architecture &nbsp;|&nbsp; (b) Online metric trajectory across rounds &nbsp;|&nbsp; (c) LLM correction convergence</em>
 </p>
 
+<br>
+
 ## Key Results
 
 | Market | Metric | Result |
@@ -34,6 +43,19 @@ The implication is a **paradigm reconstruction, not an efficiency gain**. What u
 - Fully autonomous: **~6 rounds/day**, zero human intervention after launch
 - LLM cost per iteration: **~$0.03 – $0.10 USD**
 - LLM corrections converge from **5 &rarr; 2 items**, demonstrating learned stability
+
+<br>
+
+## Blog
+
+> Articles exploring the ideas, design decisions, and engineering behind Sortify.
+
+| Date | Title | Topic |
+|------|-------|-------|
+| 2026-03-28 | [用 LLM 做推荐排序的自动校准：一个基于决策理论的工程实践](blog/2026-03-28-zhihu-post-v2.md) | Decision-theoretic calibration in production ranking systems |
+| 2026-03-27 | [我用 AI 接管了推荐系统：用群论和 Agent，重新定义推荐算法的边界](blog/2026-03-27-zhihu-post.md) | Group-theoretic perspective on agent-driven ranking |
+
+<br>
 
 ## The Problem
 
@@ -48,6 +70,8 @@ Traditional ranking optimization suffers from three structural problems:
 2. **Diagnostic entanglement** — When a metric underperforms, is the world model wrong (the offline prediction missed) or is the objective wrong (we didn't penalize the violation enough)? These require opposite corrections but produce identical symptoms.
 
 3. **No learning across rounds** — Each optimization cycle starts from scratch. History is discarded, and hard-won calibration insights are lost.
+
+<br>
 
 ## Architecture
 
@@ -123,6 +147,8 @@ A 7-table SQLite database accumulates experience across rounds:
 
 This eliminates the "Groundhog Day" problem — each round inherits and builds upon all prior learning.
 
+<br>
+
 ## Continuous Operation: The YOLO Loop
 
 <p align="center">
@@ -142,6 +168,8 @@ Each YOLO cycle executes a **10-step pipeline**:
 </p>
 
 > Pull A/B data &rarr; Record to Memory DB &rarr; LMS calibration &rarr; Assemble LLM context &rarr; LLM proposal &rarr; Apply updates &rarr; Derive target ranges &rarr; Update penalties &rarr; Optuna search &rarr; Publish to Redis
+
+<br>
 
 ## Evaluation
 
@@ -177,6 +205,8 @@ The heatmap shows 7 parameters evolving across rounds. Most parameters stabilize
 
 The number of non-zero LLM corrections decreases from 5 (R2) to 2 (R7), and maximum correction magnitude drops exponentially. The LLM's role transitions from aggressive initial framework resetting to gentle residual error correction — evidence of genuine system-level learning.
 
+<br>
+
 ## Design Philosophy
 
 Sortify's architecture is not a collection of engineering heuristics — it is a necessary consequence of **Savage's SEU axioms**. The key philosophical commitments:
@@ -189,6 +219,8 @@ Sortify's architecture is not a collection of engineering heuristics — it is a
 
 - **Memory is not optimization history — it is accumulated judgment.** The 7-table Memory DB doesn't just store past parameters; it stores calibrated world models, validated trade-offs, and evidence-linked decisions. Each round starts smarter than the last.
 
+<br>
+
 ## Project Scale
 
 | Dimension | Value |
@@ -200,6 +232,8 @@ Sortify's architecture is not a collection of engineering heuristics — it is a
 | LLM cost | ~$0.03–$0.10/round |
 | Human-written code | **0 lines** — entirely AI-agent generated |
 | Foundation | [ParaDance](https://pypi.org/project/paradance/) — 20-month predecessor, 101K+ PyPI downloads |
+
+<br>
 
 ## Design Deep Dives
 
@@ -218,15 +252,18 @@ The [Design Documentation](docs/design/) suite explains the *why* behind every a
 
 Start with #1 and #2 for foundations, then #3 and #4 for the core loop.
 
+<br>
+
 ## Resources
 
 | Resource | Description |
 |----------|-------------|
 | [Technical Report (English)](docs/Sortify-Technical-Report-en.pdf) | Full technical report with architecture, evaluation, and discussion |
-| [技术报告 (中文)](docs/Sortify-Technical-Report-zh.pdf) | 完整技术报告，含系统架构、评测与讨论 |
+| [Technical Report (Chinese)](docs/Sortify-Technical-Report-zh.pdf) | Full technical report in Chinese |
 | [Design Documentation (EN)](docs/design/en/) | 8-part deep dive into every architectural decision |
-| [Blog Post (知乎)](blog/zhihu_post.md) | Accessible introduction with group-theoretic perspective |
 | [Demo Video](docs/sortify-demo.mp4) | End-to-end demonstration of the system in action |
+
+<br>
 
 ## Repository Structure
 
@@ -236,26 +273,15 @@ sortify-resources/
 ├── README-zh.md                           # 中文文档
 ├── docs/
 │   ├── Sortify-Technical-Report-en.pdf    # Full technical report (English)
-│   ├── Sortify-Technical-Report-zh.pdf    # 完整技术报告 (中文)
+│   ├── Sortify-Technical-Report-zh.pdf    # Full technical report (Chinese)
 │   ├── sortify-demo.mp4                   # Demo video
 │   └── design/                            # Design deep dives (bilingual)
 │       ├── en/                            # English (8 docs + index)
-│       └── zh/                            # 中文 (8 docs + index)
+│       └── zh/                            # Chinese (8 docs + index)
 ├── figures/                               # Architecture and evaluation diagrams
-│   ├── abs-overview.png                   # System overview (architecture + results + convergence)
-│   ├── intro-paradigm.png                 # Traditional vs Sortify paradigm comparison
-│   ├── arch-overview.png                  # Three-layer architecture
-│   ├── arch-influence-share.png           # Influence Share calculation flow
-│   ├── arch-dual-channel.png              # Dual-channel orthogonal mechanism
-│   ├── arch-llm-controller.png            # LLM Meta-Controller data flow
-│   ├── arch-data-flow.png                 # One YOLO cycle end-to-end flow
-│   ├── train-01.png                       # YOLO three-state machine
-│   ├── eval-01.png                        # GMV/Orders uplift trajectory
-│   ├── eval-02.png                        # Offline-online calibration scatter
-│   ├── eval-03.png                        # Parameter evolution heatmap
-│   └── eval-04.png                        # LLM correction convergence
-└── blog/
-    └── zhihu_post.md                      # Zhihu blog post (Chinese)
+└── blog/                                  # Articles and write-ups
+    ├── 2026-03-28-zhihu-post-v2.md        # Decision-theoretic calibration
+    └── 2026-03-27-zhihu-post.md           # Group-theoretic perspective
 ```
 
 ## Citation

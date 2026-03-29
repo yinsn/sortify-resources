@@ -50,7 +50,8 @@ The implication is a **paradigm reconstruction, not an efficiency gain**. What u
 
 ## Sortify vs. autoresearch
 
-> Automated comparison by `codex-gpt-5.4-xhigh`. [`autoresearch`](https://github.com/karpathy/autoresearch) and Sortify were completed at nearly the same time — a natural opportunity for a side-by-side architectural analysis.
+> [!NOTE]
+> **Automated comparison by `codex-gpt-5.4-xhigh`.** [`autoresearch`](https://github.com/karpathy/autoresearch) and Sortify were completed at nearly the same time — a natural opportunity for a side-by-side architectural analysis.
 
 **Key finding:** `autoresearch` is a remarkably strong "minimum viable harness": it compresses the research problem into a single-file mutable surface, single-metric adjudication, and fixed-time-budget local autonomy loop. Sortify turns the harness itself into the product: it engineers not only how the agent experiments, but how the world model is corrected, how preferences are revised, how memory accumulates, how autonomy recovers, and how decisions are audited.
 

@@ -48,6 +48,30 @@ The implication is a **paradigm reconstruction, not an efficiency gain**. What u
 
 <br>
 
+## Sortify vs. autoresearch
+
+> Automated comparison by `codex-gpt-5.4-xhigh`. [`autoresearch`](https://github.com/karpathy/autoresearch) and Sortify were completed at nearly the same time — a natural opportunity for a side-by-side architectural analysis.
+
+**Key finding:** `autoresearch` is a remarkably strong "minimum viable harness": it compresses the research problem into a single-file mutable surface, single-metric adjudication, and fixed-time-budget local autonomy loop. Sortify turns the harness itself into the product: it engineers not only how the agent experiments, but how the world model is corrected, how preferences are revised, how memory accumulates, how autonomy recovers, and how decisions are audited.
+
+- `autoresearch` focuses on **letting the agent iterate at high frequency inside a clean experiment sandbox**
+- Sortify focuses on **letting the agent continuously make correct decisions in a messy, drifting, constrained, production, auditable real world**
+
+| Dimension | [`autoresearch`](https://github.com/karpathy/autoresearch) | Sortify | Verdict |
+|---|---|---|---|
+| Problem type | Local single-machine, single-metric, short-feedback training optimization | Online ranking with multi-objective constraints and offline-online gap | Sortify faces a high-entropy world; architectural requirements are an order of magnitude higher |
+| Agent action site | Directly modifies `train.py` | Never touches bottom-layer parameters; only calibrates the search framework | Sortify acts as a "bounded advisor"; `autoresearch` acts as a "hands-on hacker" |
+| Mutable surface | Single file `train.py` | target range, penalty weight, search config, online parameter publishing | `autoresearch` is a strongly constrained minimal surface; Sortify is a layered mutable surface |
+| Evaluator | Fixed `evaluate_bpb` in `prepare.py`, 5-min wall-clock | Offline Influence objective + online A/B + transfer calibration | Sortify's evaluator is not a point evaluation but a cross-round reality calibration system |
+| Search method | Agent uses natural-language heuristic local search | Optuna TPE with 5,000 trials / 25 workers for numerical search | Sortify separates "thinking" from "searching" |
+| Memory | Git + `results.tsv` + `run.log` + notebook | 7-table Memory DB + proposal/evidence/update history + state files | Memory is a first-class citizen in Sortify; in `autoresearch` it is more like lab notes |
+| Autonomy loop | `program.md` constrains an external agent in an infinite loop | System-internal one-shot / YOLO pipeline | `autoresearch` is protocol-first; Sortify is runtime-first |
+| Calibration | Almost no explicit calibration; directly reads measured `val_bpb` | Belief / Preference dual-channel calibration | This is the most fundamental structural watershed between the two |
+| Safety & governance | Fixed evaluator, single-file mutation, no dependency additions, timeout kill | Clamp, fallback, freeze, audit, outer governance loop | Sortify is significantly closer to production-grade autonomy |
+| Explainability | Change descriptions + frontier chart | Episode evidence chain + proposal reason + evidence link + update history | Sortify's diagnostic granularity is far higher |
+
+<br>
+
 ## Blog
 
 > Articles exploring the ideas, design decisions, and engineering behind Sortify.
